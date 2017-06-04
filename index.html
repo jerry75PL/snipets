@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,29 +10,63 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-<!--środkowanie div w div-->
+    <!--środkowanie div w div-->
     <div class="outer">
-        <div class="inner">            
+        <div class="inner">
         </div>
     </div>
 
-<br><br><br><br><br>
-<!--Okrągły przycisk z infografiką (Font Awesome) -->
-   
-     <a class="circle-button" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-<br><br><br><br><br>    
-<!-- gradient   -->
+    <br><br><br><br><br>
+    <!--Okrągły przycisk z infografiką (Font Awesome) -->
 
-<div class="gradient"></div>
+    <a class="circle-button" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+    <br><br><br><br><br>
+    <!-- gradient   -->
 
-<br><br><br><br><br>
+    <div class="gradient"></div>
 
-<!--video RWD-->
+    <br><br><br><br><br>
 
-<video class="videoRWD" controls>
+    <!--video RWD-->
+
+    <video class="videoRWD" controls>
   <source src="https://r4---sn-f5f7ln7l.googlevideo.com/videoplayback?itag=22&ratebypass=yes&requiressl=yes&sparams=dur%2Cei%2Cgcr%2Cid%2Cinitcwndbps%2Cip%2Cipbits%2Citag%2Clmt%2Cmime%2Cmm%2Cmn%2Cms%2Cmv%2Cpl%2Cratebypass%2Crequiressl%2Csource%2Cexpire&source=youtube&key=yt6&mime=video%2Fmp4&expire=1496590004&dur=1536.023&lmt=1488213880892209&signature=38BBE6B510CB4A68D3D4CD8223F13AE632ECF940.435B636A84B9402AA1D82390EC37AF62647031C0&ip=84.10.59.42&gcr=pl&ms=au&mv=m&mt=1496568337&id=o-ABGF2yLLyokCuAISlkjGzVi5YhYk-1uXTtB9x7-y6BFm&mn=sn-f5f7ln7l&mm=31&initcwndbps=1887500&ipbits=0&pl=17&ei=U9IzWZH3PMmYd6LIpqAB" type="video/mp4">
     Your browser does not support HTML5 video.
 </video>
+    <br><br><br><br><br>
+    <!--Ikona Font Awesome jako znacznik listy za pomocą klas FA bez css-->
+
+    <ul class="list fa-ul">
+        <li class="list-item "><i class="fa-li fa fa-check-square"></i>element1</li>
+        <li class="list-item"><i class="fa-li fa fa-check-square"></i>element2</li>
+        <li class="list-item"><i class="fa-li fa fa-check-square"></i>element3</li>
+        <li class="list-item"><i class="fa-li fa fa-check-square"></i>element4</li>
+        <li class="list-item"><i class="fa-li fa fa-check-square"></i>element5</li>
+    </ul>
+
+    <br><br><br><br><br>
+
+    <!--Zmiana koloru czcionki placeholdera w formularzu-->
+    <form id="contact-form" method="POST" action="https://formspree.io/email@gmail.com" autocomplete="on" class="col2 nopadding">
+        <input type="text" name="name" id="name" placeholder="Imię Nazwisko">
+        <input type="email" name="email" id="email" placeholder="E-mail">
+        <textarea name="message" id="message" placeholder="Twoja wiadmość"></textarea>
+        <button type="submit">Wyślij</button>
+    </form>
+
+
+    <br><br><br><br><br>
+
+<!--Nadanie innego koloru dla linku, który służy do pobierania plików z rozszerzeniem .doc i .docx-->
+
+<a href="#">ZWYKŁY LINK</a><br>
+<a href="plik.doc">Pobierz plik .doc</a><br>
+<a href="plik.docx">Pobierz plik .docx</a><br>
+
+
+
 </body>
+
 </html>

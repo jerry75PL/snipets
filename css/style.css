@@ -73,3 +73,23 @@ background: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet
 /*video*/
 
 .videoRWD {max-width: 90%}
+
+/*Ikona Font Awesome jako znacznik listy tu zasadniczo nie ma css-a*/
+/*
+
+.list{
+    list-style: none;
+}
+
+.list-item:before {
+    content: "";
+}*/
+
+
+/*Zmiana koloru czcionki placeholdera w formularzu*/
+
+input::placeholder,
+textarea::placeholder {
+    color: red;
+    padding: 5px;
+}
