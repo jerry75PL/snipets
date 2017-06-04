@@ -147,18 +147,41 @@ blockquote:lang(en) {
     color: crimson;
 }
 
+
 /*Stopka strony przypięta do dolnej krawędzi przeglądarki*/
 
-.copyright{
+.copyright {
     background-color: darkgrey;
     margin: 0;
     padding: 0;
 }
 
-footer{
+footer {
     position: fixed;
     width: 100%;
     bottom: 0;
     margin: 0;
     padding: 0;
-  }
+}
+
+
+/*Powiększanie zdjęcia w tle po najechaniu myszką*/
+
+.zoom-box {
+    position: relative;
+    width: 670px;
+    height: 370px;
+    border: #438493 solid 10px;
+    overflow: hidden;
+}
+
+.zoom-back {
+    position: absolute;
+    margin: 0;
+}
+
+.zoom-back img:hover {
+    transform: scale(1.5);
+}
+
+
