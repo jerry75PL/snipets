@@ -103,13 +103,46 @@ textarea::placeholder {
 }
 
 
-
 /*Nadanie innego koloru dla linku, który służy do pobierania plików z rozszerzeniem .doc i .docx*/
 
-
-a[href$=".doc"]{
+a[href$=".doc"] {
     color: aqua;
 }
-a[href$=".docx"]{
+
+a[href$=".docx"] {
     color: greenyellow;
+}
+
+
+/*Znacznik cytatu <q> oraz <blockquote> to znaczniki cytatów. Dla języka
+angielskiego cudzysłów w znaczniku cytatu <q> oraz <blockquote> ma mieć
+wygląd *cytowany tekst*, a dla innych języków "cytowany tekst"*/
+
+q {
+    quotes: "''" "''";
+}
+
+blockquote::before {
+    content: "+"
+}
+
+blockquote::after {
+    content: "+"
+}
+
+blockquote:lang(en)::before {
+    content: "#"
+}
+
+blockquote:lang(en)::after {
+    content: "#"
+}
+
+q:lang(en) {
+    color: red;
+    quotes: "*" "*";
+}
+
+blockquote:lang(en) {
+    color: crimson;
 }
