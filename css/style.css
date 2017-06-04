@@ -140,7 +140,7 @@ blockquote:lang(en)::after {
 
 q:lang(en) {
     color: red;
-    quotes: "*" "*";
+    quotes: "*" "$";
 }
 
 blockquote:lang(en) {
@@ -188,11 +188,11 @@ footer {
 
 /*Efekt bijącego serca w napisie*/
 
-.serce{
-    font-size: 10em; 
+.serce {
+    font-size: 10em;
 }
 
-.fa-heart {
+.pulse {
     color: red;
     animation-name: resize;
     animation-duration: 2s;
@@ -209,56 +209,101 @@ footer {
     }
 }
 
+
 /*Efekt kurtyny przy ładowaniu strony*/
 
-.outer-c{
+.outer-c {
     position: relative;
     width: 1000px;
-    height:80vh;
+    height: 80vh;
     background-color: beige;
 }
-.inner-top{
+
+.inner-top {
     position: absolute;
     animation-name: kurtyna;
-    animation-delay: 4s; /*aby zobaczyć efekt*/
+    animation-delay: 4s;
+    /*aby zobaczyć efekt*/
     animation-duration: 2s;
     animation-fill-mode: forwards;
-    animation-iteration-count: 1;   
+    animation-iteration-count: 1;
     width: 100%;
-/*    height: 50%;*/
+    /*    height: 50%;*/
     background-color: aqua;
     top: 0;
 }
-.inner-bottom{
+
+.inner-bottom {
     position: absolute;
     animation-name: kurtyna;
-    animation-delay: 4s; /*aby zobaczyć efekt*/
+    animation-delay: 4s;
+    /*aby zobaczyć efekt*/
     animation-duration: 2s;
     animation-fill-mode: forwards;
-    animation-iteration-count: 1;    
+    animation-iteration-count: 1;
     width: 100%;
-/*    height: 50%;*/
+    /*    height: 50%;*/
     background-color: darkmagenta;
     bottom: 0;
 }
 
-@keyframes kurtyna{
+@keyframes kurtyna {
     0% {
         height: 0;
     }
-    
     100% {
         height: 50%;
     }
 }
 
+
 /*Tło z efektem parallax*/
 
-.parallax{
+.parallax {
     position: relative;
     width: 100%;
     height: 200px;
     background: url(../img/background1.jpg) fixed no-repeat;
     background-size: cover;
-        
+}
+
+
+/*Dwustronny box odwracający się po najechaniu myszką*/
+
+.out-rotate {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background-color: azure;
+}
+
+.inn-1r {
+    position: absolute;
+    margin: 0;
+    width: 100%;
+    height: 50%;
+    top: 0;
+/*    transform: rotateY(180deg);*/
+    background-color: red;
+/*    backface-visibility: hidden;*/
+    z-index: 2;
+}
+
+.inn-2r {
+    position: absolute;
+    margin: 0;
+    width: 100%;
+    height: 50%;
+    bottom: 0;
+    background-color: darkcyan;
+    backface-visibility: hidden;
+    z-index: 2;
+}
+
+
+.inn-1r:hover {
+    transform: rotateY(180deg);
+}
+.inn-2r:hover {
+    transform: rotateY(90deg);
 }
