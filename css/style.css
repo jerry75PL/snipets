@@ -63,18 +63,26 @@
     border: 1px solid red;
 }
 
+
 /*gradient*/
-.gradient{
-background: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet); 
+
+.gradient {
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
     width: 100%;
     height: 200px;
 }
 
+
 /*video*/
 
-.videoRWD {max-width: 90%}
+.videoRWD {
+    max-width: 90%;
+}
+
 
 /*Ikona Font Awesome jako znacznik listy tu zasadniczo nie ma css-a*/
+
+
 /*
 
 .list{
