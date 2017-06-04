@@ -185,3 +185,25 @@ footer {
 }
 
 
+/*Efekt bijącego serca w napisie*/
+
+.serce{
+    font-size: 10em; 
+}
+
+.fa-heart {
+    color: red;
+    animation-name: resize;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes resize {
+    0%,
+    100% {
+        transform: scale(1.5);
+    }
+    50% {
+        transform: scale(0.5);
+    }
+}
