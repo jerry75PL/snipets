@@ -101,3 +101,15 @@ textarea::placeholder {
     color: red;
     padding: 5px;
 }
+
+
+
+/*Nadanie innego koloru dla linku, który służy do pobierania plików z rozszerzeniem .doc i .docx*/
+
+
+a[href$=".doc"]{
+    color: aqua;
+}
+a[href$=".docx"]{
+    color: greenyellow;
+}
